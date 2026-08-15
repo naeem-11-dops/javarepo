@@ -1,8 +1,8 @@
 # demo-naeem1
 This repository is a demo repo for prectice git and github.
 
-# role
-a devops engineer 
+# roles
+a devops engineers 
 
 # tools
 linux,docker,kubernates,networking,aws
