@@ -5,4 +5,4 @@ This repository is a demo repo for prectice git and github.
 a devops engineers 
 
 # tools
-linux,docker,kubernates,networking,aws
+linux,docker,kubernates,networking,aws,ansible,terraform
