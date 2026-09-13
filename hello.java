@@ -221,3 +221,16 @@ public class hello{
     }
 }*/
 
+// do while loop
+
+/*import java.util.*;
+public class hello{
+    public static void main(String args[]){
+        int count =1;
+        do{
+            System.out.println("hello devops");
+            count++;
+        }while(count<=10);
+    }
+}*/
+
