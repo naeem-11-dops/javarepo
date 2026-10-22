@@ -526,3 +526,219 @@ public class hello{
 
 // block scope : when a variable declear in a block{}, so variable are valid or 
 //useful in this particular block{}.
+
+//  10: advanced pattern
+
+// hollow rectangle
+
+/*import java.util.*;
+public class hello{
+    public static void hollow_rectangle(int r, int c){
+        for(int i=1; i<=r; i++){
+            for(int j=1; j<=c; j++){
+                if(i==1 || i==r || j==1 || j==c){    
+                    System.out.print("*");               
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        hollow_rectangle(4,5);
+    }
+}*/
+
+// half_pyramid
+
+/*import java.util.*;
+public class hello{
+    public static void half_pyramid(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        half_pyramid(5);
+    }
+}*/
+
+// half_pyramid with number
+
+/*import java.util.*;
+public class hello{
+    public static void half_pyramid(int n){
+      for(int i=1; i<=n; i++){
+        for(int j=1; j<=n-i+1; j++){
+            System.out.print(j+" ");
+        }
+        System.out.println();
+      } 
+    }
+    public static void main(String args[]){
+        half_pyramid(5);
+    }
+}*/
+
+//floyd_triangle
+
+/*import java.util.*;
+public class hello{
+    public static void floyd_triangle(int n){
+        int count = 1;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(count+" ");
+                count++;
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        floyd_triangle(5);
+    }
+}*/
+
+//01 triangle
+
+/*import java.util.*;
+public class hello{
+    public static void zero_onetriangle(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                if((i+j)%2==0){
+                    System.out.print("1"+" ");
+                }
+                else{
+                    System.out.print("0"+" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        zero_onetriangle(5);
+    }
+}*/
+
+// butterfly pattern
+
+/*import java.util.*;
+public class hello{
+    public static void butterfly(int n){
+        for(int i=1; i<=n; i++){
+          for(int j=1; j<=i; j++){
+            System.out.print("*");
+            }
+          for(int j=1; j<=2*(n-i); j++){
+            System.out.print(" ");
+           }
+          for(int j=1; j<=i; j++){
+            System.out.print("*");
+           }
+           System.out.println();
+        } 
+
+        // 2nd half
+
+        for(int i=n; i>=1; i--){
+            for(int j=1; j<=i; j++){
+              System.out.print("*");
+            }
+            for(int j=1; j<=2*(n-i); j++){
+             System.out.print(" ");
+            }
+           for(int j=1; j<=i; j++){
+             System.out.print("*");
+           }
+          System.out.println();
+        } 
+    }
+    public static void main(String args[]){
+        butterfly(5);
+    }
+    
+}*/
+
+// solid rombus
+
+/*import java.util.*;
+public class hello{
+    public static void solid_rombus(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=n; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main (String args[]){
+        solid_rombus(5);
+    }
+    
+}*/
+
+// hollow rhombus
+
+/*import java.util.*;
+public class hello{
+    public static void hollow_rhombus(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=n; j++){
+                if(i==1 || i==n || j==1 || j==n){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        hollow_rhombus(5);
+    }
+}*/
+
+// diamond patterns
+
+/*import java.util.*;
+public class hello{
+    public static void diamond(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=(2*i)-1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=n; i>=1; i--){
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            for(int j=1; j<=(2*i)-1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        diamond(5);
+    }
+}*/
